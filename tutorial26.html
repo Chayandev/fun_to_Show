@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quires</title>
+    <style>
+        .box {
+            text-align: center;
+            background-color: aqua;
+            color: black;
+            font-size: 50px;
+            display: none;
+        }
+
+        @media (max-width:300px) {
+            #box-1 {
+                display: block;
+                background-color: rgb(194, 111, 191);
+            }
+        }
+
+        @media (min-width:300px)and (max-width:500px) {
+            #box-2 {
+                display: block;
+                background-color: rgb(34, 96, 149);
+            }
+        }
+
+        @media (min-width:500px)and (max-width:900px) {
+            #box-3 {
+                display: block;
+                background-color: rgb(153, 170, 83);
+            }
+        }
+        @media (min-width:900px) {
+            #box-4 {
+                display: block;
+                background-color: rgb(64, 159, 49);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">I am a SmartPhone</div>
+    <div class="box" id="box-2">I am a Tablate</div>
+    <div class="box" id="box-3">I am a Laptop</div>
+    <div class="box" id="box-4">I am a Computer</div>
+
+</body>
+
+</html>
